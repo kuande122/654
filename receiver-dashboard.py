@@ -512,6 +512,4 @@ with row3_3, _lock:
     catch_rate(player, team)
 
 
-# ROW 5 ------------------------------------------------------------------------
-row5_spacer1, row5_1, row5_spacer2 = st.beta_columns((.1, 3.2, .1))
 
