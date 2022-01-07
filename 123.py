@@ -20,6 +20,6 @@ if confirm_input:
        st.write("輸入不合法,請重新輸入:")
      else:
        st.write=b
-if __name__=='__main__':
-  paly()
+#if __name__=='__main__':
+  #paly()
 
