@@ -8,7 +8,6 @@ if confirm_input:
   end=100
   x=st.number_input("請輸入%g到%g之間的整數:"%(start,end))
   confirm_input2 = st.button('輸入確認')
-  break
   if confirm_input2:
     if x==c:
       st.write("恭喜你中獎了")
