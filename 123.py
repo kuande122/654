@@ -1,28 +1,18 @@
-import streamlit as st 
-import random as RD2
+import random
+import streamlit as st
+confirm_input = st.button('確認產生答案')
+if confirm_input:
+  c=random.randint(2,99)
+  start = 1
+  end = 100
+  start,end = 1,100
+  st.write(c)
 
-counter =0
 
-max=100
-min=1
-g=st.number_input('你猜多少?')
-target = RD2.randint(min,max)
-while True:
-  while True:
-    
-    if g>=min and g<=max :
-      break
-    else:
-      st.write(f'你猜得數需要是{min}到{max}之間')
-  counter=counter+1
-  if target < g :
-    st.write (f'目標比{g}小')
-  elif target > g:
-    st.write(f'目標比{g}大')
-  else :
-    st.write (f'你猜中了{target}')
-    st.write (f'你總共猜了{counter}次')
-    break
+
+
+
+
 
 
 
