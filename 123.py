@@ -3,8 +3,8 @@ import random as RD2
 
 counter =0
 
-max=st.number_input('請輸入max:')
-min=st.number_input('請輸入min:')
+max=100
+min=1
 
 target = RD2.randint(min,max)
 while True:
