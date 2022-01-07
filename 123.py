@@ -11,14 +11,14 @@ if confirm_input:
   while confirm_input2:
     if x==c:
       st.write("恭喜你中獎了")
-  elif x>c:
-    if x>=end:
-      st.write("輸入不合法,請重新輸入:")
+    elif x>c:
+      if x>=end:
+        st.write("輸入不合法,請重新輸入:")
+      else:
+        end=x
     else:
-      end=x
-  else:
-    if x<=start:
-      st.write("輸入不合法,請重新輸入:")
-    else:
-      start=x
+      if x<=start:
+        st.write("輸入不合法,請重新輸入:")
+      else:
+        start=x
 
