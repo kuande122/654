@@ -10,7 +10,7 @@ st.write(answer)
 #重複猜數字，直到猜對為止
 while True:
  #判斷有沒有猜中密碼
-    if guess == answer:
+    if guess==answer:
         st.write('答對了！')
         break   #猜對才跳脫迴圈
     elif guess<answer:
