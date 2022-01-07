@@ -9,7 +9,7 @@ if confirm_input:
   if b:
     if b==a:
       st.write("恭喜你中獎了")
-    break
+    
   elif b>a:
     if b>=end:
       st.write("輸入不合法,請重新輸入:")
