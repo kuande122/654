@@ -1,18 +1,29 @@
-from random import randint
-import random
 import streamlit as st 
-#規定範圍並產生密碼
-lowest = 1
-highest = 100
-a = random.randint(lowest, highest)
-x=st.number_input("請輸入%g到%g之間的整數:"%(lowest,highest))
-st.write(a)
-#重複猜數字，直到猜對為止
+import random as RD2
+
+counter =0
+
+max=st.number_input('請輸入max:')
+min=st.number_input('請輸入min:')
+
+target = RD2.randint(min,max)
 while True:
- #判斷有沒有猜中密碼
-   if x==a:
-     st.write("恭喜你中獎了")
- 
+  while True:
+    g = st.number_input('你猜多少?')
+    if g>=min and g<=max :
+      break
+    else:
+      st.write(f'你猜得數需要是{min}到{max}之間')
+  counter=counter+1
+  if target < g :
+    st.write (f'目標比{g}小')
+  elif target > g:
+    st.write(f'目標比{g}大')
+  else :
+    st.write (f'你猜中了{target}')
+    st.write (f'你總共猜了{counter}次')
+    break
+
 
 
 
