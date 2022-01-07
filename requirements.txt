@@ -1,8 +1,1 @@
-matplotlib
-numpy
-pandas
-streamlit
-seaborn
-statsmodels
-xlrd
-openpyxl
+random
