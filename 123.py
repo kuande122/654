@@ -7,6 +7,7 @@ if confirm_input:
   start,end=1,100
   b=st.number_input("請輸入%d到%d之間的整數:"%(start,end))
   if confirm_input1 :
+    st.write('人')
     if b:
       if b==a:
        st.write("恭喜你中獎了")
