@@ -7,7 +7,7 @@ answer = randint(lowest, highest)
  
 #重複猜數字，直到猜對為止
 while True:
-    guess = input('密碼介於 ' + str(lowest) + '-' + str(highest) + ':\n>>')
+    guess = st.number_input('密碼介於 ' + str(lowest) + '-' + str(highest) + ':\n>>')
  
     #檢查輸入的內容是否為數字
     try:
