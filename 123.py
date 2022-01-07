@@ -1,12 +1,13 @@
 import random
 import streamlit as st
 confirm_input = st.button('開始遊戲')
+confirm_input1 = st.button('輸入確認')
 if confirm_input:
   a=random.randint(2,99)
   start,end=1,100
-  while 1:
-    b=st.number_input("請輸入%d到%d之間的整數:"%(start,end))
-    if b==a:
+  b=st.number_input("請輸入%d到%d之間的整數:"%(start,end))
+    if b:
+      if b==a:
       st.write("恭喜你中獎了")
       break
     elif b>a:
