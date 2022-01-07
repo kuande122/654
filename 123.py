@@ -15,7 +15,7 @@ if confirm_input:
       st.write("輸入不合法,請重新輸入:")
     else:
       end=b
-   else:
+  else:
      if b<=start:
        st.write("輸入不合法,請重新輸入:")
      else:
