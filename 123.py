@@ -10,9 +10,9 @@ while True:
     guess = st.write('密碼介於 ' + str(lowest) + '-' + str(highest) + ':\n>>')
  
         #檢查輸入的數字是否介於規定範圍內
-    if guess <= lowest or guess >= highest:
-        st.write('請輸入 ' + str(lowest) + '-' + str(highest) + ' 之間的整數\n')
-        continue
+    #if guess <= lowest or guess >= highest:
+        #st.write('請輸入 ' + str(lowest) + '-' + str(highest) + ' 之間的整數\n')
+        #continue
  
         #判斷有沒有猜中密碼
     if guess == answer:
