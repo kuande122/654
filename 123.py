@@ -18,8 +18,8 @@ while True:
     if guess == answer:
         st.write('答對了！')
         break   #猜對才跳脫迴圈
-    elif guess < answer:
-        lowest = guess
+    elif guess<answer:
+        lowest=guess
     else:
-        highest = guess
+        highest=guess
 
