@@ -17,9 +17,9 @@ if confirm_input:
       end=b
     else:
       if b<=start:
-        write("輸入不合法,請重新輸入:")
+        st.write("輸入不合法,請重新輸入:")
       else:
-        write=b
+        st.write=b
 if __name__=='__main__':
   paly()
 
