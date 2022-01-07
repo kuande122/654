@@ -4,7 +4,7 @@ from random import randint
 lowest = 1
 highest = 100
 answer = randint(lowest, highest)
- 
+x=st.number_input("請輸入%g到%g之間的整數:"%(lowest,highest))
 #重複猜數字，直到猜對為止
 while True:
     guess = st.write('密碼介於 ' + str(lowest) + '-' + str(highest) + ':\n>>')
