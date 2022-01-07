@@ -15,11 +15,11 @@ if confirm_input:
       st.write("輸入不合法,請重新輸入:")
     else:
       end=b
-    else:
-      if b<=start:
-        st.write("輸入不合法,請重新輸入:")
-      else:
-        st.write=b
+   else:
+     if b<=start:
+       st.write("輸入不合法,請重新輸入:")
+     else:
+       st.write=b
 if __name__=='__main__':
   paly()
 
