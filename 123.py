@@ -5,11 +5,11 @@ counter =0
 
 max=100
 min=1
-
+g=st.number_input('你猜多少?')
 target = RD2.randint(min,max)
 while True:
   while True:
-    g=st.number_input('你猜多少?')
+    
     if g>=min and g<=max :
       break
     else:
